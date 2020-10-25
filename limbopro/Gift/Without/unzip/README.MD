@@ -5,10 +5,12 @@
 
 ## 更新说明 
 
-### 10.06.2020 更新说明
+### 10.25.2020 更新说明
 1. 更新 预配置文件中分流规则至 **神机规则（更新中）**；
 2. 更新 **本预配置文件所引用到的仓库**；
-3. QuantumultX4limbopro.conf 文件中加入 `skip_validating_cert = true`，即日起重新下载本预配置文件（QuantumultX4limbopro.conf）无需再重新生成并信任证书；
+3. 新增毒奶去广告 [Rewrite] 跟 [filter]
+4. 参阅 https://t.me/limboprossr/1952 配置
+
 
 <details>
 <summary> 查看更多更新说明 </summary>
@@ -75,6 +77,7 @@
 ✅ 在 [配置] - [编辑] - [filter_remote] - 对应如下：（供参考）
 
 ```
+http://limbopro.xyz/adsblock4porn.list , tag=毒奶特供, force-policy=🛑 广告拦截, enabled=true
 https://raw.githubusercontent.com/NobyDa/Script/master/QuantumultX/AdRule.list, tag=野比去广告（稳定版）, force-policy=🛑 广告拦截, enabled=true
 https://raw.githubusercontent.com/NobyDa/Script/master/QuantumultX/AdRuleTest.list, tag=野比去广告（测试版）, force-policy=🛑 广告拦截, enabled=false
 https://raw.githubusercontent.com/NobyDa/ND-AD/master/QuantumultX/AD_Block.txt, tag=野比(4W+), force-policy=🛑 广告拦截, enabled=false
